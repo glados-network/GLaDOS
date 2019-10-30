@@ -1,14 +1,18 @@
 # GLaDOS Website
 
-[![Gitter](https://badges.gitter.im/glados-talk/community.svg)](https://gitter.im/glados-talk/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 Current Accessable Domain for China [https://glados-network.github.io](https://glados-network.github.io).
 
 Domain for the rest of world [https://glados.network](https://glados.network).
 
 --------------------
 
-## GLaDOS Education
+## Restricted Contents:
+
+You cannot use GLaDOS—and therefore, cannot use GLaDOS softwares—for specific restricted contents. GLaDOS cannot support Politics Media, websites that publish gambling, pornography and hate-related materials.
+
+This is because of regulations imposed through Government Network Rules or the requirements of Internet Services Providers.
+
+## Open for Education
 
 GLaDOS Education helps students, teachers, and schools find the tools and resources they need to master their network.
 
