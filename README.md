@@ -1,6 +1,6 @@
 # GLaDOS Website
 
-Current Accessable Domain for China [https://glados-robots.github.io](https://glados-robots.github.io).
+Current Accessable Domain for China [https://glados-web.github.io](https://glados-web.github.io).
 
 Domain for the rest of world [https://glados.network](https://glados.network).
 
