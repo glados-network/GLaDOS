@@ -1,7 +1,5 @@
 # GLaDOS Website
 
-[Current Accessable Website for China](https://www-glados.github.io).
-
 Domain for the rest of world [https://glados.network](https://glados.network).
 
 --------------------
