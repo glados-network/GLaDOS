@@ -39,4 +39,4 @@ Let us build a better and open society for our next generation.
 
 ### How to apply:
 
-Register [GLaDOS](https://glados-network.github.io),update your email setting to your education mail, and click "Upgrade for free" in the menu bar. If you are a free user, we will upgrade you to Paid Plan. If you are a Paid user alreay, you will get 200 membership days on your current plan.
+Register [GLaDOS](https://glados.network),update your email setting to your education mail, and click "Upgrade for free" in the menu bar. If you are a free user, we will upgrade you to Paid Plan. If you are a Paid user alreay, you will get 200 membership days on your current plan.
