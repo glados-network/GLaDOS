@@ -1,6 +1,6 @@
 # GLaDOS Website
 
-<a href="http://54.65.158.72">https://glados.network</a>
+[https://glados.network](http://54.65.158.72/)
 
 
 --------------------
