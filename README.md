@@ -1,6 +1,6 @@
 # GLaDOS Website
 
-Domain for the rest of world [https://glados.network](https://glados.network).
+[https://glados.network](http://54.65.158.72/).
 
 --------------------
 
