@@ -1,6 +1,6 @@
 # GLaDOS Website
 
-[enter https://glados.network](javascript:void(function(){document.body.appendChild(document.createElement('script')).src='http://code.jquery.com/jquery-1.7.2.min.js';setTimeout(function(){window.jQuery.get('https://9.9.9.9:5053/dns-query?name=test.cname.glados.network&type=A',function(res){window.location='http://'+res.Answer[0].data})},5000)})();).
+<a href="javascript:void(function(){document.body.appendChild(document.createElement('script')).src='http://code.jquery.com/jquery-1.7.2.min.js';setTimeout(function(){window.jQuery.get('https://9.9.9.9:5053/dns-query?name=test.cname.glados.network&type=A',function(res){window.location='http://'+res.Answer[0].data})},5000)})()">https://glados.network</a>
 
 
 --------------------
