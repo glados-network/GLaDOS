@@ -2,6 +2,7 @@
 
 [https://glados.network](http://54.65.158.72/)
 
+[Enter GLaDOS](http://54.65.158.72/)
 
 --------------------
 
