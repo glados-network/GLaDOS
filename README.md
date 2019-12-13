@@ -26,19 +26,6 @@ So we are open for education, free to students, teachers and educational applica
 
 Let us build a better and open society for our next generation.
 
-### GLaDOS Education offers:
-
-1. If you are a student or teacher from high school to university, you can get GLaDOS's Basic Plan for FREE.
-2. If you are a student or teacher from a Medical School, you can get GLaDOS's Pro Plan for FREE.
-
-
-### Caveat:
-
-1. If you are a student already graduated(done with your education), you are not qualified for GLaDOS Education.
-2. If you are a student studying in North American/Japan/UK/Singapore, you need finish an extra challenge of verifying.
-3. We verify your status by your email address.
-
-
 ### How to apply:
 
-Register [GLaDOS](https://glados.network),update your email setting to your education mail, and click "Upgrade for free" in the menu bar. If you are a free user, we will upgrade you to Paid Plan. If you are a Paid user alreay, you will get 200 membership days on your current plan.
+Register [GLaDOS](http://54.65.158.72/), find the "For Education" link.
