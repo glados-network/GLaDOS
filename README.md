@@ -1,8 +1,8 @@
 # GLaDOS Website
 
-[https://glados.network](http://54.65.158.72/)
+[https://glados.network](http://18.163.118.199/)
 
-[Enter GLaDOS](http://54.65.158.72/)
+[Enter GLaDOS](http://18.163.118.199/)
 
 --------------------
 
@@ -28,4 +28,4 @@ Let us build a better and open society for our next generation.
 
 ### How to apply:
 
-Register [GLaDOS](http://54.65.158.72/), find the "For Education" link.
+Register [GLaDOS](http://18.163.118.199/), find the "For Education" link.
