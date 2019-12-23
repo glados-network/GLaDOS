@@ -2,7 +2,7 @@
 
 [https://glados.network](http://18.163.118.199/)
 
-[Enter GLaDOS](http://18.163.118.199/)
+[Enter GLaDOS](http://18.163.118.199/) [Login](http://18.163.118.199/) [Register](http://18.163.118.199/)
 
 --------------------
 
