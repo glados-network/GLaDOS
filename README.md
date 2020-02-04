@@ -1,6 +1,6 @@
-# [GLaDOS Website](http://18.163.118.199/)
+# [GLaDOS Website](http://13.115.247.45/)
 
-[Enter GLaDOS](http://18.163.118.199/) | [Login](http://18.163.118.199/) | [Register](http://18.163.118.199/)
+[Enter GLaDOS](http://13.115.247.45/) | [Login](http://13.115.247.45/) | [Register](http://13.115.247.45/)
 
 --------------------
 
@@ -26,4 +26,4 @@ Let us build a better and open society for our next generation.
 
 ### How to apply:
 
-Register [GLaDOS](http://18.163.118.199/), find the "For Education" link.
+Register [GLaDOS](http://13.115.247.45/), find the "For Education" link.
