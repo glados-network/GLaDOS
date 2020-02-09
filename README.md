@@ -2,6 +2,15 @@
 
 [Enter GLaDOS](http://13.115.247.45/) | [Login](http://13.115.247.45/) | [Register](http://13.115.247.45/)
 
+## Support Clients
+
+- [Clash for windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+- [Clash for Mac ClashX](https://github.com/yichengchen/clashX/releases)
+- [Clash for Andriod](https://github.com/Kr328/ClashForAndroid)
+- [Clash for Router](https://github.com/SukkaW/Koolshare-Clash)
+- [V2Ray](https://github.com/v2ray/v2ray-core) Based VPN : V2rayN, V2rayU, V2rayNG, Mellow
+- Shadowrocket
+
 --------------------
 
 ## Restricted Contents:
