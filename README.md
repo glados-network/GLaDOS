@@ -1,8 +1,8 @@
-# [GLaDOS Website](http://13.115.247.45/)
+# [GLaDOS Website](http://103.117.103.133/)
 
 GLaDOS is trustable networking manager, a system to master your network.
 
-[Enter GLaDOS](http://13.115.247.45/) | [Login](http://13.115.247.45/) | [Register](http://13.115.247.45/)
+[Enter GLaDOS](http://103.117.103.133/) | [Login](http://103.117.103.133/) | [Register](http://103.117.103.133/)
 
 ## Support Clients
 
@@ -37,13 +37,11 @@ Let us build a better and open society for our next generation.
 
 ### How to apply for students:
 
-Register [GLaDOS](http://13.115.247.45/), find the "For Education" link.
+Register [GLaDOS](http://103.117.103.133/), find the "For Education" link.
 
 ### About GLaDOS
 
 GLaDOS is short for General Local and Destination Operating System.
-
-[![GLaDOS is still Alive](https://i1.theportalwiki.net/img/f/f4/Portal_2_Soundtrack_Cover_-_Volume_1.jpg)](https://www.youtube.com/watch?v=Y6ljFaKRTrI)
 
 We build fast and reliable services for Professionals, Engineers, Scientists, Doctors, Artists, Elon Musks, Steve Jobs, Bill Gates and Superman/Superwoman.
 
