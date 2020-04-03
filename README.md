@@ -1,8 +1,8 @@
-# [GLaDOS Website](https://www.103.117.103.133.xip.io/)
+# [GLaDOS Website](https://glados.live/)
 
 GLaDOS is trustable networking manager, a system to master your network.
 
-[Enter GLaDOS](https://www.103.117.103.133.xip.io/) | [Login](https://www.103.117.103.133.xip.io/) | [Register](https://www.103.117.103.133.xip.io/)
+[Enter GLaDOS](https://glados.live/) | [Login](https://glados.live/) | [Register](https://glados.live/)
 
 ## Support Clients
 
@@ -37,7 +37,7 @@ Let us build a better and open society for our next generation.
 
 ### How to apply for students:
 
-Register [GLaDOS](https://www.103.117.103.133.xip.io/), find the "For Education" link.
+Register [GLaDOS](https://glados.live/), find the "For Education" link.
 
 ### About GLaDOS
 
