@@ -6,11 +6,11 @@ GLaDOS is trustable networking manager, a system to master your network.
 
 ## Support Clients
 
-- [Clash for windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+- [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)
 - [Clash for Mac ClashX](https://github.com/yichengchen/clashX/releases)
 - [Clash for Andriod](https://github.com/Kr328/ClashForAndroid)
 - [Clash for Router](https://github.com/SukkaW/Koolshare-Clash)
-- [V2Ray](https://github.com/v2ray/v2ray-core) Based VPN : V2rayN, V2rayU, V2rayNG, Mellow
+- [Wireguard](https://www.wireguard.com/)
 - Shadowrocket
 
 --------------------
@@ -41,8 +41,4 @@ Register [GLaDOS](https://glados.live/), find the "For Education" link.
 
 ### About GLaDOS
 
-GLaDOS is short for General Local and Destination Operating System.
-
-We build fast and reliable services for Professionals, Engineers, Scientists, Doctors, Artists, Elon Musks, Steve Jobs, Bill Gates and Superman/Superwoman.
-
-They're specialists, not fond of rules. And they have no respect for the status quo.
+GLaDOS is short for Generic Local and Destination Operating System. 
