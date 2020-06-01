@@ -1,8 +1,8 @@
-# [GLaDOS Website](https://glados.live/)
+# [GLaDOS Website](https://glados.rocks/)
 
 GLaDOS is trustable networking manager, a system to master your network.
 
-[Enter GLaDOS](https://glados.live/) | [Login](https://glados.live/) | [Register](https://glados.live/)
+[Enter GLaDOS](https://glados.rocks/) | [Login](https://glados.rock/) | [Register](https://glados.rocks/)
 
 ## Support Clients
 
@@ -21,7 +21,7 @@ You cannot use GLaDOS—and therefore, cannot use GLaDOS softwares—for specifi
 
 This is because of regulations imposed through Government Network Rules or the requirements of Internet Services Providers.
 
-## Open for Education
+## Open for Education Usage
 
 GLaDOS Education helps students, teachers, and schools find the tools and resources they need to master their network.
 
@@ -37,7 +37,7 @@ Let us build a better and open society for our next generation.
 
 ### How to apply for students:
 
-Register [GLaDOS](https://glados.live/), find the "For Education" link.
+Register [GLaDOS](https://glados.rocks/), find the "For Education" link.
 
 ### About GLaDOS
 
