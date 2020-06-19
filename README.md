@@ -2,7 +2,7 @@
 
 GLaDOS is trustable networking manager, a system to master your network.
 
-[Enter GLaDOS](https://glados.rocks/) | [Login](https://glados.rock/) | [Register](https://glados.rocks/)
+[Enter GLaDOS](https://glados.rocks/) | [Login](https://glados.rocks/) | [Register](https://glados.rocks/)
 
 ## Support Clients
 
