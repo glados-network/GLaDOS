@@ -6,7 +6,7 @@ GLaDOS 自动签到与提示 —— 基于Github Action与Telegram Bot
 所有的套餐数据存放在budget.json中，若有不符请根据原始数据修改  
 套餐数据来自于：/static/js/Console/pages/Checkin.js，在网页控制台Sources面板查看
 
-注：仅支持单个账号，不保证签到一定成功
+注：仅支持单个账号，不保证签到一定成功。
 
 ---
 
