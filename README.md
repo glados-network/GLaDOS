@@ -7,7 +7,7 @@ GLaDOS 自动签到与提示 —— 基于Github Action与Telegram Bot
 套餐数据来自于：/static/js/Console/pages/Checkin.js，在网页控制台Sources面板查看
 
 注：仅支持单个账号，不保证签到一定成功。
-
+测试修改
 ---
 
 ## 邀请码：  
