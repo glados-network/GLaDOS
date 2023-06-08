@@ -7,7 +7,7 @@ on:
     branches: [ main ]
   schedule:
     # 分(0-59) 时(0-23) 日(1-31) 月(1-12) 星期(0-6)
-    - cron: 0 16 * * *
+    - cron: 0 5 * * *
 
 jobs:
   build:
