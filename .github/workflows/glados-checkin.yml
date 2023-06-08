@@ -2,12 +2,12 @@ name: glados-checkin
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
     branches: [ main ]
   schedule:
     # 分(0-59) 时(0-23) 日(1-31) 月(1-12) 星期(0-6)
-    - cron: 15 15 * * *
+    - cron: 23 15 * * *
 
 jobs:
   build:
