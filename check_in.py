@@ -25,10 +25,10 @@ class GLaDOS_CheckIn:
         bot.send_message(self._chat_id, msg)
     def _send_to_mp(self,msg:str):
         tday = datetime.now()
-        app_id = os.environ["wx9d76a93fb0605d9c"]
-        app_secret = os.environ["4c4f06b2dd2f6343b39eb51d3817aebf"]
-        user_id = os.environ["o9Tf-6kWBMVUijef5sC3na9Q9dZQ"]
-        template_id = os.environ["-jJx95USDMEelvp4GZneg2RQKoOG2kX9kwXYFx3TTNQ"]
+        app_id = "wx9d76a93fb0605d9c"
+        app_secret = "4c4f06b2dd2f6343b39eb51d3817aebf"
+        user_id = "o9Tf-6kWBMVUijef5sC3na9Q9dZQ"
+        template_id = "-jJx95USDMEelvp4GZneg2RQKoOG2kX9kwXYFx3TTNQ"
         client = WeChatClient(app_id, app_secret)
         wm = WeChatMessage(client)
         data ={'data':tday,'re':msg}
