@@ -32,5 +32,10 @@ jobs:
           python3 main.py
         env:
           COOKIES: ${{ secrets.COOKIES }}
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
+          # BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          # CHAT_ID: ${{ secrets.CHAT_ID }}
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+          USER_ID: ${{ secrets.USER_ID }}
+          TEMPLATE_ID_S: ${{ secrets.TEMPLATE_ID_S }}
+          TEMPLATE_ID_E: ${{ secrets.TEMPLATE_ID_E }}

@@ -6,8 +6,7 @@ from wechatpy.client.api import WeChatMessage, WeChatTemplate
 
 import json
 import requests
-import telegram
-
+import telegram,random
 
 class GLaDOS_CheckIn:
     _HOST = "glados.rocks"
@@ -15,24 +14,30 @@ class GLaDOS_CheckIn:
     _UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
     _BUDGET_DATA_PATH = "budget.json"
 
-    def __init__(self, cookies: str, bot_token: str, chat_id: str):
+    def __init__(self, cookies: str,  app_id,app_secret,user_id,template_id_s,template_id_e):
         self._cookies: str = cookies
-        self._bot_token: str = bot_token
-        self._chat_id: str = chat_id
+        self._app_id = app_id
+        self._app_secret = app_secret
+        self._user_id = user_id
+        self._template_id_s = template_id_s
+        self._template_id_e = template_id_e
 
-    def _send_msg(self, msg: str):
-        bot = telegram.Bot(token=self._bot_token)
-        bot.send_message(self._chat_id, msg)
+    # def _send_msg(self, msg: str):
+    #     bot = telegram.Bot(token=self._bot_token)
+    #     bot.send_message(self._chat_id, msg)
+
+    # 字体随机颜色
+    def _get_random_color(self):
+        return "#%06x" % random.randint(0, 0xFFFFFF)
     def _send_to_mp(self,msg:str):
-        tday = datetime.now()
-        app_id = "wx9d76a93fb0605d9c"
-        app_secret = "4c4f06b2dd2f6343b39eb51d3817aebf"
-        user_id = "o9Tf-6kWBMVUijef5sC3na9Q9dZQ"
-        template_id = "-jJx95USDMEelvp4GZneg2RQKoOG2kX9kwXYFx3TTNQ"
-        client = WeChatClient(app_id, app_secret)
+        tday = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        client = WeChatClient(self._app_id, self._app_secret)
         wm = WeChatMessage(client)
-        data ={'data':tday,'re':msg}
-        res = wm.send_template(user_id, template_id, data)
+        data = {
+            "date": {"value": format(tday), "color": self._get_random_color()},
+            "re": {"value": msg, "color": self._get_random_color()},
+        }
+        res = wm.send_template(self._user_id, self._template_id_e, data)
         # print(res)
 
     def _report_success(self, msg: str, left_days: int, plan: str, used_gb: float, total_gb: int):
@@ -46,41 +51,28 @@ class GLaDOS_CheckIn:
         #     'Total: ' + str(total_gb) + 'GB\n' +
         #     '--------------------'
         # )
-        self._send_to_mp(
-            '--------------------\n'
-            'GLaDOS CheckIn\n'
-            'Msg: ' + msg + '\n' +
-            'Plan: ' + plan + ' Plan\n' +
-            'Left days: ' + str(left_days) + '\n' +
-            'Usage: ' + '%.3f' % used_gb + 'GB\n' +
-            'Total: ' + str(total_gb) + 'GB\n' +
-            '--------------------'
-        )
+        tday = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        data = {
+            "date": {"value": tday, "color": self._get_random_color()},
+            "msg": {"value": msg, "color": self._get_random_color()},
+            "plan": {"value": plan, "color": self._get_random_color()},
+            "ldays": {"value": left_days, "color": self._get_random_color()},
+            "usege": {"value": '%.3f' % used_gb, "color": self._get_random_color()},
+            "total": {"value": total_gb, "color": self._get_random_color()},
+        }
+
+        client = WeChatClient(self._app_id, self._app_secret)
+        wm = WeChatMessage(client)
+        res = wm.send_template(self._user_id, self._template_id_s, data)
 
     def _report_cookies_expired(self):
-        self._send_to_mp(
-            '--------------------\n'
-            'GLaDOS CheckIn\n'
-            'Msg: Your cookies are expired!\n'
-            '--------------------'
-        )
+        self._send_to_mp("Your cookies are expired!")
 
     def _report_token_error(self):
-        self._send_to_mp(
-            '--------------------\n'
-            'GLaDOS CheckIn\n'
-            'Msg: oops, token error\n'
-            '--------------------'
-        )
+        self._send_to_mp("oops, token error")
 
     def _report_checkin_error(self, msg: str):
-        self._send_to_mp(
-            '--------------------\n'
-            'GLaDOS CheckIn\n'
-            'Msg: Check in error!\n'
-            'Error:\n' + msg + '\n' +
-            '--------------------'
-        )
+        self._send_to_mp(msg)
 
     def _api_traffic(self):
         traffic_url = f"{self._ORIGIN_URL}/api/user/traffic"
@@ -109,7 +101,7 @@ class GLaDOS_CheckIn:
                          'origin': self._ORIGIN_URL,
                          'user-agent': self._UA,
                          'content-type': 'application/json;charset=UTF-8'},
-                # data=json.dumps(payload)
+                data=json.dumps(payload)
         ) as r:
             return r.json()
 
