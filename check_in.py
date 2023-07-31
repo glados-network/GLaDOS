@@ -68,7 +68,7 @@ class GLaDOS_CheckIn:
         check_in_url = f"{self._ORIGIN_URL}/api/user/checkin"
         referer_url = f"{self._ORIGIN_URL}/console/checkin"
 
-        payload = {'token': 'glados.network'}
+        payload = {'token': 'glados.one'}
 
         with requests.post(
                 check_in_url,
@@ -77,7 +77,7 @@ class GLaDOS_CheckIn:
                          'origin': self._ORIGIN_URL,
                          'user-agent': self._UA,
                          'content-type': 'application/json;charset=UTF-8'},
-                data=json.dumps(payload)
+                # data=json.dumps(payload)
         ) as r:
             return r.json()
 
