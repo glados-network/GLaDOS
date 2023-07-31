@@ -1,2 +1,3 @@
 python-telegram-bot
 requests
+wechatpy==1.8.18

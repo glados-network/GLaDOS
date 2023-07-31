@@ -1,5 +1,8 @@
 import traceback
 from typing import Optional
+from datetime import date, datetime
+from wechatpy import WeChatClient
+from wechatpy.client.api import WeChatMessage, WeChatTemplate
 
 import json
 import requests
@@ -20,9 +23,30 @@ class GLaDOS_CheckIn:
     def _send_msg(self, msg: str):
         bot = telegram.Bot(token=self._bot_token)
         bot.send_message(self._chat_id, msg)
+    def _send_to_mp(self,msg:str):
+        tday = datetime.now()
+        app_id = os.environ["wx9d76a93fb0605d9c"]
+        app_secret = os.environ["4c4f06b2dd2f6343b39eb51d3817aebf"]
+        user_id = os.environ["o9Tf-6kWBMVUijef5sC3na9Q9dZQ"]
+        template_id = os.environ["-jJx95USDMEelvp4GZneg2RQKoOG2kX9kwXYFx3TTNQ"]
+        client = WeChatClient(app_id, app_secret)
+        wm = WeChatMessage(client)
+        data ={'data':tday,'re':msg}
+        res = wm.send_template(user_id, template_id, data)
+        # print(res)
 
     def _report_success(self, msg: str, left_days: int, plan: str, used_gb: float, total_gb: int):
-        self._send_msg(
+        # self._send_msg(
+        #     '--------------------\n'
+        #     'GLaDOS CheckIn\n'
+        #     'Msg: ' + msg + '\n' +
+        #     'Plan: ' + plan + ' Plan\n' +
+        #     'Left days: ' + str(left_days) + '\n' +
+        #     'Usage: ' + '%.3f' % used_gb + 'GB\n' +
+        #     'Total: ' + str(total_gb) + 'GB\n' +
+        #     '--------------------'
+        # )
+        self._send_to_mp(
             '--------------------\n'
             'GLaDOS CheckIn\n'
             'Msg: ' + msg + '\n' +
@@ -34,15 +58,23 @@ class GLaDOS_CheckIn:
         )
 
     def _report_cookies_expired(self):
-        self._send_msg(
+        self._send_to_mp(
             '--------------------\n'
             'GLaDOS CheckIn\n'
             'Msg: Your cookies are expired!\n'
             '--------------------'
         )
 
+    def _report_token_error(self):
+        self._send_to_mp(
+            '--------------------\n'
+            'GLaDOS CheckIn\n'
+            'Msg: oops, token error\n'
+            '--------------------'
+        )
+
     def _report_checkin_error(self, msg: str):
-        self._send_msg(
+        self._send_to_mp(
             '--------------------\n'
             'GLaDOS CheckIn\n'
             'Msg: Check in error!\n'
@@ -111,6 +143,10 @@ class GLaDOS_CheckIn:
 
         if check_in_msg == '\u6ca1\u6709\u6743\u9650':
             self._report_cookies_expired()
+            return
+
+        if "token error" in check_in_msg:
+            self._report_token_error()
             return
 
         status_response = self._api_status()
