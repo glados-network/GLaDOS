@@ -6,7 +6,8 @@ from wechatpy.client.api import WeChatMessage, WeChatTemplate
 
 import json
 import requests
-import telegram,random
+import random
+# import telegram
 
 class GLaDOS_CheckIn:
     _HOST = "glados.rocks"
@@ -38,19 +39,9 @@ class GLaDOS_CheckIn:
             "re": {"value": msg, "color": self._get_random_color()},
         }
         res = wm.send_template(self._user_id, self._template_id_e, data)
-        # print(res)
+
 
     def _report_success(self, msg: str, left_days: int, plan: str, used_gb: float, total_gb: int):
-        # self._send_msg(
-        #     '--------------------\n'
-        #     'GLaDOS CheckIn\n'
-        #     'Msg: ' + msg + '\n' +
-        #     'Plan: ' + plan + ' Plan\n' +
-        #     'Left days: ' + str(left_days) + '\n' +
-        #     'Usage: ' + '%.3f' % used_gb + 'GB\n' +
-        #     'Total: ' + str(total_gb) + 'GB\n' +
-        #     '--------------------'
-        # )
         tday = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         data = {
             "date": {"value": tday, "color": self._get_random_color()},
@@ -90,7 +81,7 @@ class GLaDOS_CheckIn:
 
     def _api_check_in(self) -> dict:
         check_in_url = f"{self._ORIGIN_URL}/api/user/checkin"
-        referer_url = f"{self._ORIGIN_URL}/console/checkin"
+        referer_url = f"{self._ORIGIN_URL}/console"
 
         payload = {'token': 'glados.one'}
 
@@ -133,6 +124,7 @@ class GLaDOS_CheckIn:
         check_in_response = self._api_check_in()
         check_in_msg = check_in_response['message']
 
+        # 没有权限
         if check_in_msg == '\u6ca1\u6709\u6743\u9650':
             self._report_cookies_expired()
             return
