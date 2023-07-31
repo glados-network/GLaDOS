@@ -48,8 +48,8 @@ class GLaDOS_CheckIn:
             "msg": {"value": msg, "color": self._get_random_color()},
             "plan": {"value": plan, "color": self._get_random_color()},
             "ldays": {"value": left_days, "color": self._get_random_color()},
-            "usege": {"value": '%.3f' % used_gb, "color": self._get_random_color()},
-            "total": {"value": total_gb, "color": self._get_random_color()},
+            "usege": {"value": "{}G".format('%.3f' % used_gb), "color": self._get_random_color()},
+            "total": {"value": "{}G".format(total_gb), "color": self._get_random_color()},
         }
 
         client = WeChatClient(self._app_id, self._app_secret)
