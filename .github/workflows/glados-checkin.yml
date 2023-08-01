@@ -1,0 +1,41 @@
+name: glados-checkin
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # 分(0-59) 时(0-23) 日(1-31) 月(1-12) 星期(0-6) UTC时间 +8小时为北京时间
+    - cron: 0 17 * * *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          pip3 install -r requirements.txt
+
+      - name: CheckIn
+        run: |
+          python3 main.py
+        env:
+          COOKIES: ${{ secrets.COOKIES }}
+          # BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          # CHAT_ID: ${{ secrets.CHAT_ID }}
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+          USER_ID: ${{ secrets.USER_ID }}
+          TEMPLATE_ID_S: ${{ secrets.TEMPLATE_ID_S }}
+          TEMPLATE_ID_E: ${{ secrets.TEMPLATE_ID_E }}
