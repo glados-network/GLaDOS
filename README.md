@@ -1,19 +1,8 @@
-# [GLaDOS Website](https://glados.rocks/)
+# [GLaDOS Website](https://glados.one/)
 
 GLaDOS is trustable networking manager, a system to master your network.
 
-[Enter GLaDOS](https://glados.rocks/) | [Login](https://glados.rocks/) | [Register](https://glados.rocks/)
-
-## Support Clients
-
-- [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)
-- [Clash for Mac ClashX](https://github.com/yichengchen/clashX/releases)
-- [Clash for Andriod](https://github.com/Kr328/ClashForAndroid)
-- [Clash for Router](https://github.com/SukkaW/Koolshare-Clash)
-- [Wireguard](https://www.wireguard.com/)
-- Shadowrocket
-
---------------------
+[Enter GLaDOS](https://glados.one/) | [Login](https://glados.one/) | [Register](https://glados.one/)
 
 ## Restricted Contents:
 
@@ -37,7 +26,7 @@ Let us build a better and open society for our next generation.
 
 ### How to apply for students:
 
-Register [GLaDOS](https://glados.rocks/), find the "For Education" link.
+Register [GLaDOS](https://glados.one/), find the "For Education" link.
 
 ### About GLaDOS
 
